@@ -46,15 +46,15 @@
 
 .bx-red,
 .bx-theme-red {
-	--primary: #e22b2b;
-	--theme-color-primary: #e22b2b;
+	--primary: #ff2e29;
+	--theme-color-primary: #ff2e29;
 	--theme-color-second: #e95c5c;
 	--theme-color-light: #f0f0f0;
-	--theme-b-link: #e22b2b;
-	--theme-b-link-hover: #e95c5c;
+	--theme-b-link: #482277;
+	--theme-b-link-hover: #9161ce;
 	--theme-b-tx-primary: #fff;
-	--theme-b-bg-primary: #e22b2b;
-	--theme-b-bd-primary: #e22b2b;
+	--theme-b-bg-primary: #ff2e29;
+	--theme-b-bd-primary: #ff2e29;
 	--theme-b-sd-primary: rgba(226, 43, 43, 0.5);
 	--theme-b-tx-primary-hover: #fff;
 	--theme-b-bg-primary-hover: #e95c5c;
@@ -370,4 +370,26 @@ a:hover,
 .sidebar-icon-phone {
 	background-image: url(images/phone_white.svg);
 	background-size: auto 21px ;
+}
+
+/*teamA custom styles*/
+
+/*02.05.2020*/
+.bx-nav-bars {
+	border-top: 5px solid var(--theme-color-primary);
+	border-bottom: 5px solid var(--theme-color-primary);
+}
+
+.bx-nav-bars:after {
+	background: var(--theme-color-primary);
+}
+
+.bx-footer a{
+	color: #fff;
+}
+
+@media (max-width: 767px){
+	.bx-header-logo {
+		background-color: #fff;
+	}
 }
