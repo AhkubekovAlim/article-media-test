@@ -1,29 +1,30 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Задайте вопрос");
-?>
-
-	<p>
-		<b>Телефон:</b> 8 (495) 212 85 06<br>
-		<b>Адрес:</b> г. Москва, ул. 2-я Хуторская, д. 38
-	</p>
-	<div class="mb-2 embed-responsive embed-responsive-16by9">
-		<iframe class="embed-responsive-item" width="100%" height="490" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/maps?f=q&amp;source=s_q&amp;hl=ru&amp;geocode=&amp;q=%D0%B3.+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D1%83%D0%BB.+2-%D1%8F+%D0%A5%D1%83%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+%D0%B4.+38%D0%90&amp;aq=&amp;sll=55,103&amp;sspn=90.84699,270.527344&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=2-%D1%8F+%D0%A5%D1%83%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+38,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+127287&amp;ll=55.805478,37.569551&amp;spn=0.023154,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-	</div>
-	<div class="mb-4">
-		<small><a href="https://maps.google.ru/maps?f=q&amp;source=embed&amp;hl=ru&amp;geocode=&amp;q=%D0%B3.+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D1%83%D0%BB.+2-%D1%8F+%D0%A5%D1%83%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+%D0%B4.+38%D0%90&amp;aq=&amp;sll=55,103&amp;sspn=90.84699,270.527344&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=2-%D1%8F+%D0%A5%D1%83%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+38,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+127287&amp;ll=55.805478,37.569551&amp;spn=0.023154,0.054932&amp;z=14&amp;iwloc=A" style="text-align:left">Просмотреть увеличенную карту</a></small>
-	</div>
-	<h2>Задать вопрос</h2>
-
+?><p>
+ <b>Телефон:</b> <a href="tel:89054363333">8 (905) 436-33-33</a><br>
+ <b>Адрес:</b>&nbsp;Нальчик, ул. Кирова, 1д, ТРК Галерея<br>
+ <b>Instagram:&nbsp;</b><a target="_blank" href="https://www.instagram.com/bambino_official07/">bambino_official07</a><br>
+</p>
+<div class="mb-2 embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" width="100%" height="490" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.141856459919!2d43.57441331571885!3d43.478509871726786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405a06a64f5be7e5%3A0x5847ff94981790c2!2z0YPQuy4g0JrQuNGA0L7QstCwLCAx0LQsINCd0LDQu9GM0YfQuNC6LCDQmtCw0LHQsNGA0LTQuNC90L4t0JHQsNC70LrQsNGA0YHQutCw0Y8g0KDQtdGB0L8uLCAzNjAwMDA!5e0!3m2!1sru!2sru!4v1588417485387!5m2!1sru!2sru"></iframe>
+</div>
+<div class="mb-4">
+ <small>
+     <a href="https://goo.gl/maps/Vy7J1Lcchn7NG44X9" style="text-align:left">
+         Просмотреть увеличенную карту
+     </a>
+ </small>
+</div>
+<h2>Задать вопрос</h2>
 	<?$APPLICATION->IncludeComponent(
-		"bitrix:main.feedback",
-		"bootstrap_v4",
-		Array(
-			"EMAIL_TO" => "sale@nyuta.bx",
-			"EVENT_MESSAGE_ID" => array(),
-			"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-			"REQUIRED_FIELDS" => array("NAME","EMAIL"),
-			"USE_CAPTCHA" => "Y"
-		)
-	);?>
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php")?>
+	"bitrix:main.feedback",
+	"bootstrap_v4",
+	Array(
+		"EMAIL_TO" => "sale@nyuta.bx",
+		"EVENT_MESSAGE_ID" => array(),
+		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
+		"REQUIRED_FIELDS" => array("NAME","EMAIL"),
+		"USE_CAPTCHA" => "Y"
+	)
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php")?>
