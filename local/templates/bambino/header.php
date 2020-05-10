@@ -37,6 +37,22 @@ $curPage = $APPLICATION->GetCurPage(true);
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 	<? $APPLICATION->ShowHead(); ?>
+    <!-- Begin Verbox {literal} -->
+    <script type='text/javascript'>
+        (function(d, w, m) {
+            window.supportAPIMethod = m;
+            var s = d.createElement('script');
+            s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+            s.async = true;
+            var id = '0a6c4c01ac6f66b088fb2380a2ba8fa7';
+            s.src = 'https://admin.verbox.ru/support/support.js?h='+id;
+            var sc = d.getElementsByTagName('script')[0];
+            w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+            if (sc) sc.parentNode.insertBefore(s, sc);
+            else d.documentElement.firstChild.appendChild(s);
+        })(document, window, 'Verbox');
+    </script>
+    <!-- {/literal} End Verbox -->
 </head>
 <body class="bx-background-image bx-theme-<?=$theme?>" <?$APPLICATION->ShowProperty("backgroundImage");?>>
 <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
