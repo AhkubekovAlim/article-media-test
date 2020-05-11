@@ -5,8 +5,8 @@
 	"bootstrap_v4", 
 	array(
 		"COMPONENT_TEMPLATE" => "bootstrap_v4",
-		"FACEBOOK" => "",
-		"VKONTAKTE" => "",
+		"FACEBOOK" => "https://facebook.com/messages/t/bambinoofficial07",
+		"VKONTAKTE" => "https://vk.com/bambino_nalchik",
 		"TWITTER" => "",
 		"GOOGLE" => "",
 		"INSTAGRAM" => "https://www.instagram.com/bambino_official07/"

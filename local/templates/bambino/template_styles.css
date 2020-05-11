@@ -388,6 +388,18 @@ a:hover,
 	color: #fff;
 }
 
+.bottom-menu .nav-item {
+	width: 50%;
+}
+.bottom-menu a.nav-link:nth-child(odd) {
+	padding-left: 0;
+}
+
+.verbox-mobile-area {
+	background: #6c757d;
+	height: 78px;
+}
+
 @media (max-width: 767px){
 	.bx-header-logo {
 		background-color: #fff;

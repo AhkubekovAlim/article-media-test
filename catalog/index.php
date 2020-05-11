@@ -1,6 +1,7 @@
 <?
 define("HIDE_SIDEBAR", true);
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+LocalRedirect('/');
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:catalog", "bootstrap_v4", array(
 	"IBLOCK_TYPE" => "catalog",

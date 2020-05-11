@@ -56,7 +56,7 @@
 		<div class="bx-footer-section py-5 bg-dark">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 col-lg-3 order-lg-2 order-1 mb-4 mb-lg-0">
+					<div class="col-sm-6 col-lg-4 order-lg-3 order-1 mb-4 mb-lg-0">
 						<h4 class="bx-block-title text-light">
 							<? $APPLICATION->IncludeComponent(
 								"bitrix:main.include",
@@ -83,7 +83,7 @@
 							false
 						);?>
 					</div>
-					<div class="col-sm-6 col-lg-3 order-lg-3 order-2 mb-4 mb-lg-0">
+                    <?/*<div class="col-sm-6 col-lg-3 order-lg-3 order-2 mb-4 mb-lg-0">
 						<h4 class="bx-block-title text-light">
 							<? $APPLICATION->IncludeComponent(
 								"bitrix:main.include",
@@ -129,8 +129,34 @@
 							);?>
 						</div>
 						<div id="bx-composite-banner" style="padding-top: 20px"></div>
-					</div>
-					<div class="col-sm-6 col-lg-3 order-lg-1 order-4">
+					</div>*/?>
+                    <div class="col-sm-6 col-lg-4 order-lg-2 order-2">
+                        <div class="mb-3 d-flex align-items-center">
+                            <i class="fa fa-phone pr-3 text-white" style="font-size: 25px;"></i>
+                            <span class="text-white">
+								<? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "", array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "PATH" => SITE_DIR."include/telephone.php"
+                                ),
+                                    false
+                                );?>
+							</span>
+                        </div>
+                        <div class="mb-3 text-white">
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "PATH" => SITE_DIR."include/schedule.php"
+                                ),
+                                false
+                            );?>
+                        </div>
+                    </div>
+					<div class="col-sm-6 col-lg-4 order-lg-1 order-4">
 						<div class="mb-3">
 							<a class="bx-footer-logo" href="<?=SITE_DIR?>">
 								<? $APPLICATION->IncludeComponent(
@@ -144,31 +170,8 @@
 								);?>
 							</a>
 						</div>
-						<div class="mb-3 d-flex align-items-center">
-							<i class="fa fa-phone pr-3 text-white" style="font-size: 25px;"></i>
-							<span class="text-white">
-								<? $APPLICATION->IncludeComponent(
-									"bitrix:main.include",
-									"", array(
-										"AREA_FILE_SHOW" => "file",
-										"PATH" => SITE_DIR."include/telephone.php"
-									),
-									false
-								);?>
-							</span>
-						</div>
-						<div class="mb-3 text-white">
-							<? $APPLICATION->IncludeComponent(
-								"bitrix:main.include",
-								"",
-								array(
-									"AREA_FILE_SHOW" => "file",
-									"PATH" => SITE_DIR."include/schedule.php"
-								),
-								false
-							);?>
-						</div>
-						<div class="mb-3 text-white">
+
+						<?/*<div class="mb-3 text-white">
 							<? $APPLICATION->IncludeComponent(
 								"bitrix:main.include",
 								"",
@@ -178,7 +181,7 @@
 								),
 								false
 							);?>
-						</div>
+						</div>*/?>
 					</div>
 				</div>
 			</div>
@@ -186,10 +189,10 @@
 		<div class="bx-footer-section py-2 bg-secondary">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-6 bx-up">
+						<div class="col-6 bx-up">
 							<a href="javascript:void(0)" data-role="eshopUpButton" class="text-white"><i class="fa fa-caret-up"></i> <?=GetMessage("FOOTER_UP_BUTTON")?></a>
 						</div>
-						<div class="col-sm-6 text-white text-right">
+						<div class="col-6 text-white text-right">
 							<? $APPLICATION->IncludeComponent("bitrix:main.include", "", array(
 								"AREA_FILE_SHOW" => "file",
 								"PATH" => SITE_DIR."include/copyright.php"
@@ -199,8 +202,8 @@
 				</div>
 			</div>
 	</footer>
-	<div class="col d-sm-none">
-		<?$APPLICATION->IncludeComponent("bitrix:sale.basket.basket.line", "bootstrap_v4", array(
+	<div class="col d-sm-none verbox-mobile-area">
+		<?/*$APPLICATION->IncludeComponent("bitrix:sale.basket.basket.line", "bootstrap_v4", array(
 				"PATH_TO_BASKET" => SITE_DIR."personal/cart/",
 				"PATH_TO_PERSONAL" => SITE_DIR."personal/",
 				"SHOW_PERSONAL_LINK" => "N",
@@ -216,7 +219,7 @@
 			),
 			false,
 			array()
-		);?>
+		);*/?>
 	</div>
 </div> <!-- //bx-wrapper -->
 

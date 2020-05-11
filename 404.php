@@ -14,12 +14,13 @@ $APPLICATION->SetTitle("Страница не найдена");?>
 		<div class="bx-404-text-block">Неправильно набран адрес, <br>или такой страницы на сайте больше не существует.</div>
 		<div class="">Вернитесь на <a href="<?=SITE_DIR?>">главную</a> или воспользуйтесь картой сайта.</div>
 	</div>
+
+<?/*
 	<div class="map-columns row">
 		<div class="col-sm-10 col-sm-offset-1">
 			<div class="bx-maps-title">Карта сайта:</div>
 		</div>
 	</div>
-
 	<div class="col-sm-offset-2 col-sm-4">
 		<div class="bx-map-title"><i class="fa fa-leanpub"></i> Каталог</div>
 		<?$APPLICATION->IncludeComponent(
@@ -50,7 +51,7 @@ $APPLICATION->SetTitle("Страница не найдена");?>
 			false
 		);
 		?>
-	</div>
+	</div> */?>
 
 	<div class="col-sm-offset-1 col-sm-4">
 		<div class="bx-map-title"><i class="fa fa-info-circle"></i> О магазине</div>

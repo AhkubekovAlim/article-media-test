@@ -16,8 +16,8 @@ $this->setFrameMode(true);
 if (empty($arResult))
 	return;
 ?>
-<nav class="d-block">
-	<ul class="nav flex-column">
+<nav class="d-block bottom-menu">
+	<ul class="nav">
 		<?foreach($arResult as $itemIdex => $arItem):?>
 			<?if ($arItem["DEPTH_LEVEL"] == "1"):?>
 				<li class="nav-item">

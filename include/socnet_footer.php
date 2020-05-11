@@ -4,8 +4,8 @@
 	"bitrix:eshop.socnet.links", 
 	"big_squares", 
 	array(
-		"FACEBOOK" => "",
-		"VKONTAKTE" => "",
+		"FACEBOOK" => "https://facebook.com/messages/t/bambinoofficial07",
+		"VKONTAKTE" => "https://vk.com/bambino_nalchik",
 		"TWITTER" => "",
 		"GOOGLE" => "",
 		"INSTAGRAM" => "https://www.instagram.com/bambino_official07/",

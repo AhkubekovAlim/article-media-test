@@ -36,6 +36,7 @@ $curPage = $APPLICATION->GetCurPage(true);
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+	<? $APPLICATION->SetAdditionalCSS("/bitrix/css/main/font-awesome.css"); ?>
 	<? $APPLICATION->ShowHead(); ?>
     <!-- Begin Verbox {literal} -->
     <script type='text/javascript'>
@@ -91,8 +92,26 @@ $curPage = $APPLICATION->GetCurPage(true);
 					</a>
 				</div>
 
-				<div class="col-auto d-none d-md-block bx-header-personal">
-					<?$APPLICATION->IncludeComponent(
+				<div class="col-12 col-sm-auto bx-header-personal">
+                    <div class="d-flex align-items-center justify-content-center justify-content-sm-end">
+                        <div class="p-lg-3 p-1">
+                            <div class="bx-header-worktime">
+                                <span class="bx-worktime-title"><?=GetMessage('HEADER_WORK_TIME'); ?></span>
+                                <span class="bx-worktime-schedule">
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "PATH" => SITE_DIR."include/schedule.php"
+                                        ),
+                                        false
+                                    );?>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+					<?/*$APPLICATION->IncludeComponent(
 						"bitrix:sale.basket.basket.line",
 						"bootstrap_v4",
 						array(
@@ -109,11 +128,11 @@ $curPage = $APPLICATION->GetCurPage(true);
 						),
 						false,
 						array()
-					);?>
+					);*/?>
 				</div>
 
 				<div class="col bx-header-contact">
-					<div class="d-flex align-items-center justify-content-between justify-content-md-center flex-column flex-sm-row flex-md-column flex-lg-row">
+					<div class="d-flex align-items-center justify-content-center justify-content-sm-start justify-content-md-center">
 						<div class="p-lg-3 p-1">
 							<div class="bx-header-phone-block">
 								<i class="bx-header-phone-icon"></i>
@@ -130,22 +149,6 @@ $curPage = $APPLICATION->GetCurPage(true);
 								</span>
 							</div>
 						</div>
-						<div class="p-lg-3 p-1">
-							<div class="bx-header-worktime">
-								<div class="bx-worktime-title"><?=GetMessage('HEADER_WORK_TIME'); ?></div>
-								<div class="bx-worktime-schedule">
-									<?$APPLICATION->IncludeComponent(
-										"bitrix:main.include",
-										"",
-										array(
-											"AREA_FILE_SHOW" => "file",
-											"PATH" => SITE_DIR."include/schedule.php"
-										),
-										false
-									);?>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -158,7 +161,7 @@ $curPage = $APPLICATION->GetCurPage(true);
 						"bitrix:menu",
 						"bootstrap_v4",
 						array(
-							"ROOT_MENU_TYPE" => "left",
+							"ROOT_MENU_TYPE" => "top",
 							"MENU_CACHE_TYPE" => "A",
 							"MENU_CACHE_TIME" => "36000000",
 							"MENU_CACHE_USE_GROUPS" => "Y",
@@ -167,7 +170,7 @@ $curPage = $APPLICATION->GetCurPage(true);
 							"MENU_CACHE_GET_VARS" => array(),
 							"MAX_LEVEL" => "3",
 							"CHILD_MENU_TYPE" => "left",
-							"USE_EXT" => "Y",
+							"USE_EXT" => "N",
 							"DELAY" => "N",
 							"ALLOW_MULTI_SELECT" => "N",
 							"COMPONENT_TEMPLATE" => "bootstrap_v4"
@@ -179,7 +182,7 @@ $curPage = $APPLICATION->GetCurPage(true);
 			<!--endregion-->
 
 			<!--region search.title -->
-			<?if ($curPage != SITE_DIR."index.php"):?>
+			<?/*if ($curPage != SITE_DIR."index.php"):?>
 				<div class="row mb-4">
 					<div class="col">
 						<?$APPLICATION->IncludeComponent(
@@ -214,7 +217,7 @@ $curPage = $APPLICATION->GetCurPage(true);
 						);?>
 					</div>
 				</div>
-			<?endif?>
+			<?endif*/?>
 			<!--endregion-->
 
 			<!--region breadcrumb-->
@@ -230,7 +233,7 @@ $curPage = $APPLICATION->GetCurPage(true);
 								"SITE_ID" => "-"
 							),
 							false,
-							Array('HIDE_ICONS' => 'Y')
+							Array('HIDE_ICONS' => 'N')
 						);?>
 					</div>
 				</div>
