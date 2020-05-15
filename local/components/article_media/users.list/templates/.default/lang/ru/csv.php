@@ -1,0 +1,9 @@
+<?php
+
+$MESS['ARTICLE_MEDIA_USERS_ID'] = 'id';
+$MESS['ARTICLE_MEDIA_USERS_LOGIN'] = 'Логин';
+$MESS['ARTICLE_MEDIA_USERS_NAME'] = 'ФИО';
+$MESS['ARTICLE_MEDIA_USERS_ACTION'] = 'Действие';
+$MESS['ARTICLE_MEDIA_USERS_LAST_LOGIN'] = 'Последний вход';
+$MESS['ARTICLE_MEDIA_USERS_CSV'] = 'Скачать csv';
+$MESS['ARTICLE_MEDIA_USERS_XML'] = 'Скачать xml';
